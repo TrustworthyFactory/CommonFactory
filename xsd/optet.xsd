@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="optet" type="optetType" />
+
+	<xs:complexType name="optetType">
+		<xs:sequence>
+			<xs:element name="testCoverage">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="classes">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute type="xs:int" name="totalClasses" />
+										<xs:attribute type="xs:int" name="coveredClasses" />
+										<xs:attribute type="xs:double" name="pourcentage" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="methods">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute type="xs:int" name="totalMethods" />
+										<xs:attribute type="xs:int" name="coveredMethods" />
+										<xs:attribute type="xs:double" name="pourcentage" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="lines">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute type="xs:int" name="totalLines" />
+										<xs:attribute type="xs:int" name="coveredLines" />
+										<xs:attribute type="xs:double" name="pourcentage" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="blocks">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute type="xs:int" name="totalBlocks" />
+										<xs:attribute type="xs:int" name="coveredBlocks" />
+										<xs:attribute type="xs:double" name="pourcentage" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="instructions">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute type="xs:int" name="totalInstructions" />
+										<xs:attribute type="xs:int" name="coveredInstructions" />
+										<xs:attribute type="xs:double" name="pourcentage" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="testResults">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="testResult" maxOccurs="unbounded"
+							minOccurs="0">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute type="xs:string" name="name" use="optional" />
+										<xs:attribute type="xs:string" name="result" use="optional" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="name" type="xs:string" />
+					<xs:attribute name="errors" type="xs:integer" />
+					<xs:attribute name="failures" type="xs:integer" />
+					<xs:attribute name="ignored" type="xs:integer" />
+					<xs:attribute name="ok" type="xs:integer" />
+					<xs:attribute name="undefined" type="xs:integer" />
+				</xs:complexType>
+			</xs:element>			
+			<xs:element name="metrics">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="metric" maxOccurs="unbounded"
+							minOccurs="0">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute type="xs:string" name="name" use="optional" />
+										<xs:attribute type="xs:string" name="result" use="optional" />
+										<xs:attribute type="xs:string" name="type" use="optional" />
+										<xs:attribute type="xs:string" name="category" use="optional" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="audits">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="file" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="violation" minOccurs="0"
+										maxOccurs="unbounded">
+										<xs:complexType>
+											<!-- the tools who find the problem -->
+											<xs:attribute name="tool" type="xs:string" />
+											<!-- the line where the problem is -->
+											<xs:attribute name="line" type="xs:int" />
+											<!-- the severity of the problem -->
+											<xs:attribute name="severity" type="xs:string" />
+											<!-- the category of the problem -->
+											<xs:attribute name="ruleset" type="xs:string" />
+											<!-- the message/rule -->
+											<xs:attribute name="message" type="xs:string" />
+											<!-- the recommendation or a complete explanation of the problem -->
+											<xs:attribute name="recommandation" type="xs:string" />
+											<!-- the source -->
+											<xs:attribute name="source" type="xs:string" />
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+								<xs:attribute name="name" type="xs:string" />
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="version" type="xs:string" />
+	</xs:complexType>
+
+</xs:schema>

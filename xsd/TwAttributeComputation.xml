@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Computation>
+	<TwAttribute ID="" name="Security">
+		<Evidence ID="" name="SecurityMetric" weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="17" name="Accountability">
+		<Evidence ID="15" name="constant accountability of user activity"
+			weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="18" name="Auditability/Tracability">
+		<Evidence ID="16" name="constant traceability of transactions"
+			weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="19" name="Confidentiality">
+		<Evidence ID="102" name="stored encrypted data" weigth="1" />
+		<Evidence ID="104" name="encrypted during transfer" weigth="1" />
+		<Evidence ID="106" name="required authentication" weigth="1" />
+		<Evidence ID="108" name="least privileges" weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="20" name="Integrity">
+		<Evidence ID="116" name="required authentication for interfaces"
+			weigth="1" />
+		<Evidence ID="119" name="least privileges" weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="21" name="Safety">
+		<Evidence ID="122" name="safety functions " weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="22" name="Non-Repudiation">
+		<Evidence ID="125" name="digital signed " weigth="1" />
+	</TwAttribute>
+	<!--<TwAttribute name="Openness"> <Evidence name="public interfaces" weigth="1" 
+		/> </TwAttribute> -->
+	<TwAttribute ID="23" name="Openness">
+		<Evidence ID="163" name="public interfaces" weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="24" name="Reusability">
+		<Evidence ID="168" name="Reusability of components " weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="25" name="Change Cycle/Stability">
+		<Evidence ID="173" name="Change of interfaces and functionalities"
+			weigth="1" />
+		<Evidence ID="1153" name="unit test coverage for stability"
+			weigth="3" />
+		<Evidence ID="1154" name="Compliance with best programing practices"
+			weigth="3" />
+	</TwAttribute>
+	<TwAttribute ID="26" name="Completeness">
+		<Evidence ID="178" name="fulfillment of degree" weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="27" name="Compliance with standards">
+		<Evidence ID="183" name="Compliance with standards" weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="28" name="Compliance with regulations">
+		<Evidence ID="188" name="Compliance with regulations" weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="29" name="Compliance with User expectations">
+		<Evidence ID="193" name="Compliance with User Expectations"
+			weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="30" name="Cost">
+		<Evidence ID="199" name="Appropriateness of user costs"
+			weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="31" name="Privacy">
+		<Evidence ID="295" name="quantity of shared private info"
+			weigth="1" />
+		<Evidence ID="301" name="awareness of a user that PII is shared"
+			weigth="1" />
+		<Evidence ID="305" name="UserConsentSharedPII " weigth="1" />
+		<Evidence ID="309" name="necessarily used PII " weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="32" name="Data Integrity">
+		<Evidence ID="204" name="integrity of data" weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="33" name="Data Reliability">
+		<Evidence ID="210" name="origin data" weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="34" name="Data Timeless">
+		<Evidence ID="215" name="actuality of the data" weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="35" name="Data Validity">
+		<Evidence ID="220" name="plausibility of data" weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="38" name="Accuracy">
+		<!-- <Evidence ID="225" name="accuracy calculation" weigth="1" /> -->
+		<Evidence ID="1104" name="error rate" weigth="1" />
+		<Evidence ID="1105" name="precision calculation" weigth="1" />
+	</TwAttribute>
+		<TwAttribute ID="39" name="Availability">
+		<Evidence ID="230" name="availability of Software" weigth="1" />
+		<Evidence ID="1106" name="availability of Software" weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="40" name="Flexibility/Robustness">
+		<Evidence ID="235" name="interceptet errors" weigth="1" />
+		<Evidence ID="239" name="User interactions Exceptions"
+			weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="41" name="Reliability">
+		<Evidence ID="243" name="Reliability of Software" weigth="3" />
+	</TwAttribute>
+
+
+	<TwAttribute ID="42" name="Scalability">
+		<Evidence ID="248" name="Scalability of the software" weigth="1" />
+	</TwAttribute>
+	<!-- <TwAttribute ID="44" name="Maintainability"> <Evidence ID="253" name="MaintainabilityMetric" 
+		weigth="3" /> <Evidence ID="2002" name="Comments Ratio" weigth="1" /> <Evidence 
+		ID="2001" name="Unit Test Coverage" weigth="1" /> <Evidence ID="2003" name="Unit 
+		Test Ratio" weigth="1" /> </TwAttribute> -->
+	<TwAttribute ID="44" name="Maintainability">
+		<Evidence ID="253" name="documented elements" weigth="3" />
+	</TwAttribute>
+
+
+
+
+	<TwAttribute ID="47" name="Throughput">
+		<Evidence ID="258" name="processed requests" weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="48" name="Response Time">
+		<!-- <Evidence ID="263" name="response time of requests" weigth="1" /> -->
+		<Evidence ID="1108" name="average response time"
+			weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="57" name="FunctionalCorrectness">
+		<Evidence ID="283" name="correctness of functionality"
+			weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="58" name="Composability">
+		<Evidence ID="288" name="simple composability" weigth="1" />
+	</TwAttribute>
+	<TwAttribute ID="59" name="Software Complexity">
+		<Evidence ID="292" name="structure of the software" weigth="1" />
+	</TwAttribute>
+
+</Computation>

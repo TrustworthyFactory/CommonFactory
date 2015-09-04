@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Computation>
+	<TwAttribute name="Dependability">
+		<TwProperty name="Maintainability" weigth="3" />
+		<TwProperty name="Reliability" weigth="1" />
+	</TwAttribute>
+	<TwAttribute name="Complexity">
+		<TwProperty name="SoftwareComplexity" weigth="3" />
+	</TwAttribute>
+	<TwAttribute name="Security">
+		<TwProperty name="GlobalSecurity" weigth="2" />
+	</TwAttribute>
+	<TwAttribute name="Availability">
+		<TwProperty name="AvailabilityMetric" weigth="2" />
+	</TwAttribute>
+	<TwProperty name="Maintainability">
+	    <!-- Checkstyle -->
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck" weigth="4" />
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.naming.LocalFinalVariableNameCheck" weigth="1" />
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck" weigth="4" />
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck" weigth="1" />
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck" weigth="4" />
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck" weigth="1" />
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck" weigth="4" />
+
+		<!-- PMD -->
+		<Evidence name="AbstractNaming" weigth="4" />
+		<Evidence name="AvoidDollarSigns" weigth="4" />
+		<Evidence name="AvoidFieldNameMatchingMethodName" weigth="4" />
+		<Evidence name="AvoidFieldNameMatchingTypeName" weigth="4" />
+		<Evidence name="BooleanGetMethodName" weigth="4" />
+		<Evidence name="ClassNamingConventions" weigth="4" />
+		<Evidence name="GenericsNaming" weigth="4" />
+		<Evidence name="LongVariable" weigth="4" />
+		<Evidence name="MethodNamingConventions" weigth="4" />
+		<Evidence name="MethodWithSameNameAsEnclosingClass" weigth="4" />
+		<Evidence name="MisleadingVariableName" weigth="4" />
+		<Evidence name="NoPackage" weigth="4" />
+		<Evidence name="PackageCase" weigth="4" />
+		<Evidence name="ShortClassName" weigth="4" />
+		<Evidence name="ShortMethodName" weigth="4" />
+		<Evidence name="ShortVariable" weigth="4" />
+		<Evidence name="SuspiciousConstantFieldName" weigth="4" />
+		<Evidence name="SuspiciousEqualsMethodName" weigth="4" />
+		<Evidence name="SuspiciousHashcodeMethodName" weigth="4" />
+		<Evidence name="VariableNamingConventions" weigth="4" />
+		<Evidence name="CommentContent" weigth="4" />
+		<Evidence name="CommentRequired" weigth="4" />
+		<Evidence name="CommentSize" weigth="4" />
+
+		<!-- codepro -->
+		<Evidence name="com.instantiations.assist.eclipse.audit.fileComment" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.codeInComments" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.documentClosingBraces" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.annotationTypeNamingConvention" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.enumeratedTypeNamingConvention" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.consistentSuffixUsage" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.spaceAroundOperators" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.loopVariableNamingConvention" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.exceptionParameterNamingConvention" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.questionableName" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.spaceAfterCommas" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.typeNamesMustBeSingular" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.indentCodeWithinBlocks" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.interfaceNamingConvention" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.whiteSpaceUsage" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.pluralizeCollectionNames" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.labelNamingConvention" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.blankLineUsage" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.spaceAfterCasts" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.accessorMethodNamingConvention" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.useDomainspecificTerminology" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.avoidSimilarNames" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.oneStatementPerLine" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.packageStructure" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.staticFieldNamingConvention" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.lineLength" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.instanceFieldNamingConvention" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.spaceAroundPeriods" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.bracePosition" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.enumerationConstantNamingConvention" weigth="1" />
+	</TwProperty>
+	<TwProperty name="Reliability">
+	    <!-- checkstyle  -->
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.design.ThrowsCountCheck" weigth="1" />
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck" weigth="1" />
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.coding.IllegalThrowsCheck" weigth="1" />
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.design.MutableExceptionCheck" weigth="1" />
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.coding.RedundantThrowsCheck" weigth="1" />
+		
+		<!-- findbugs -->
+		<Evidence name="UL_UNRELEASED_LOCK_EXCEPTION_PATH" weigth="1" />
+		<Evidence name="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE"
+			weigth="1" />
+		<Evidence name="RV_EXCEPTION_NOT_THROWN" weigth="1" />
+		<Evidence name="REC_CATCH_EXCEPTION" weigth="1" />
+		<Evidence name="DE_MIGHT_DROP" weigth="1" />
+		<Evidence name="DE_MIGHT_IGNORE" weigth="1" />
+		<Evidence name="IMSE_DONT_CATCH_IMSE" weigth="1" />
+		<Evidence name="NM_CLASS_NOT_EXCEPTION" weigth="1" />
+		<Evidence name="EI_EXPOSE_REP" weigth="3" />
+
+		<!-- PMD -->
+		<Evidence name="AvoidCatchingGenericException" weigth="1" />
+		<Evidence name="AvoidCatchingNPE" weigth="1" />
+		<Evidence name="AvoidCatchingThrowable" weigth="1" />
+		<Evidence name="AvoidLosingExceptionInformation" weigth="1" />
+		<Evidence name="AvoidRethrowingException" weigth="1" />
+		<Evidence name="AvoidThrowingNewInstanceOfSameException"
+			weigth="1" />
+		<Evidence name="AvoidThrowingNullPointerException" weigth="1" />
+		<Evidence name="AvoidThrowingRawExceptionTypes" weigth="1" />
+		<Evidence name="DoNotExtendJavaLangError" weigth="1" />
+		<Evidence name="DoNotThrowExceptionInFinally" weigth="1" />
+		<Evidence name="ExceptionAsFlowControl" weigth="1" />
+		<Evidence name="SignatureDeclareThrowsException" weigth="1" />
+
+		<!-- codepro -->
+		<Evidence name="com.instantiations.assist.eclipse.audit.logExceptions" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.exceptionUsage.exceptionCreation" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.exceptionUsage.exceptionDeclaration" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.unnecessaryExceptions" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.useOfInstanceOfInCatchBlock" weigth="1" />
+
+	</TwProperty>
+	<TwProperty name="SoftwareComplexity">
+	    <!-- checkstyle -->
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.metrics.BooleanExpressionComplexityCheck" weigth="1" />
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheck" weigth="1" />
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.metrics.ClassFanOutComplexityCheck" weigth="1" />
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.sizes.ExecutableStatementCountCheck" weigth="1" />
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.sizes.FileLengthCheck" weigth="1" />
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck" weigth="1" />
+		<Evidence name="com.puppycrawl.tools.checkstyle.checks.sizes.OuterTypeNumberCheck" weigth="1" />
+
+		<!-- pmd -->
+		<Evidence name="NPathComplexity" weigth="1" />
+		<Evidence name="ExcessiveMethodLength" weigth="1" />
+		<Evidence name="ExcessiveParameterList" weigth="1" />
+		<Evidence name="ExcessiveClassLength" weigth="1" />
+		<Evidence name="CyclomaticComplexity" weigth="1" />
+		<Evidence name="ExcessivePublicCount" weigth="1" />
+		<Evidence name="TooManyFields" weigth="1" />
+		<Evidence name="NcssMethodCount" weigth="1" />
+		<Evidence name="NcssTypeCount" weigth="1" />
+		<Evidence name="NcssConstructorCount" weigth="1" />
+		<Evidence name="TooManyMethods" weigth="1" />
+
+		<!-- codepro -->
+		<Evidence name="com.instantiations.assist.eclipse.audit.largeNumberOfConstructors" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.methodChainLength" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.sourceLength" weigth="1" />
+	</TwProperty>
+	<TwProperty name="GlobalSecurity">
+	    <!-- PMD -->
+		<Evidence name="ArrayIsStoredDirectly" weigth="4" />
+		<Evidence name="MethodReturnsInternalArray" weigth="1" />
+		
+		<!-- codepro -->
+		<Evidence name="com.instantiations.assist.eclipse.audit.realmDebugEnabled" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.sqlInjection" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.serverRequestNotEncrypted" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.noActionForValidation" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.clientResponseNotEncrypted" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.noTimestampInClientRequest" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.resourceURLManipulation" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.blankPassword" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.unvalidatedFormField" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.avoidSynchronization" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.unvalidatedField" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.serverResponseNotEncrypted" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.noTimestampInServerRequest" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.dynamicDependencyInIvy" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.redirectedWithPassword" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.reflectionInjection" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.anyoneMethodPermission" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.enforceCloneableUsageSecurity" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.cloneWithoutCloneable" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.serviceRequesterResponseSecurityNotConfigured"
+			weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.anonymousLdapBinding" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.doNotSubclassClassLoader" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.noDBDriverLoading" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.appletFieldSecurity" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.serverUsesUsernameToken" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.serverUsesUsernameToken" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.deserializeabilitySecurity" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.base64EncodedPassword" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.avoidPackageScopeAuditRule" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.noSuchFieldForValidation" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.serviceRequesterRequestSecurityNotConfigured"
+			weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.validateXML" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.serverRequestNotSigned" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.externalDependencyInMaven" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.socketsInServlets" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.clientResponseNotSigned" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.avoidSockets" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.requestParamsInSession" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.disallowReturnMutable" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.missingValidatorName" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.avoidGUI" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.serverResponseTimestampNotSigned" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.taintedFilter" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.clientResponseTimestampNotSigned" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.commandInjection" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.clientUsesUsernameToken" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.relativeLibraryPath" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.useOfRandom" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.avoidManagingThreads" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.dynamicDependencyInMaven" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.serviceProviderResponseSecurityNotConfigured"
+			weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.weblogicSessionIdLength" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.clientRequestTimestampNotSigned" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.missingErrorPage" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.mutabilityOfArrays" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.avoidInnerClasses" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.attributeInjection" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.processControl" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.deleteTemporaryFiles" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.actionFieldRevalidated" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.externalDependencyInIvy" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.preventOverwritingOfExternalizableObjects"
+			weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.externalDependencyInAnt" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.databaseConnectionsShouldNotBeStatic"
+			weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.serverTimestampDoesNotExpire" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.avoidUnsafeArrayDeclaration" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.staticFieldSecurity" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.avoidClassLoaders" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.instanceFieldSecurity" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.pathManipulation" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.invalidSourceForDatabaseConnection" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.validationNotEnabled" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.filenameGivenOut" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.serializeabilitySecurity" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.serviceProviderRequestSecurityNotConfigured"
+			weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.codeInjection" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.clientRequestNotSigned" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.noTimestampInServerResponse" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.doNotSerializeByteArrays" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.plainTextPassword" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.mutableConstantField" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.resourceInjection" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.hardcodedPassword" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.doNotImplementSerializable" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.crossSiteScripting" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.manipulationWithXPath" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.deprecatedMethod" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.avoidQueriesFromUser" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.disallowNativeMethods" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.missingCatchOfException" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.sameValidatorName" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.logForging" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.noTimestampInClientResponse" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.entityBeansRemoteInterface" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.usePrivilegedCodeSparingly" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.clientRequestNotEncrypted" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.httpResponseSplitting" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.finalizeShouldNotBePublic" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.missingResetMethod" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.analysis.avoidComparingClassesByStrings" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.clientTimestampDoesNotExpire" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.avoidFileIO" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.authenticationByHostname" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.passwordInFile" weigth="1" />
+		<Evidence name="com.instantiations.assist.eclipse.audit.serverRequestTimestampNotSigned" weigth="1" />
+	</TwProperty>
+	<TwProperty name="AvailabilityMetric">
+	</TwProperty>
+</Computation>

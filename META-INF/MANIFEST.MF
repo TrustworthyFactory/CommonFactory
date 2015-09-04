@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Common
+Bundle-SymbolicName: com.thalesgroup.optet.common
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.thalesgroup.optet.common.Activator
+Bundle-Vendor: THALESGROUP
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Export-Package: com.thalesgroup.optet.common.data,
+ com.thalesgroup.optet.common.exception,
+ com.thalesgroup.optet.common.jaxb.TWProfile,
+ com.thalesgroup.optet.common.jaxb.optet,
+ com.thalesgroup.optet.common.views
+Import-Package: org.eclipse.core.resources
